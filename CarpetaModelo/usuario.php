@@ -1,9 +1,10 @@
 <?php
-    include_once "persona.php";
-    class cliente extends persona
+    class Usuario
     {
         private $login;
         private $password;
+        private $nombre;
+        private $apellidos;
 
         public function setLogin($login)
         {
@@ -21,6 +22,24 @@
         {
             return $this->password;
         }
+        public function setNombre($nombre)
+        {
+            $this->nombre = $nombre;
+        }
+        public function getNombre()
+        {
+            return $this->nombre;
+        }
+        public function setApellidos($apellidos)
+        {
+            $this->password = $apellidos;
+        }
+        public function getApellidos()
+        {
+            return $this->apellidos;
+        }
+        
+
         public function __construct($login,$password)
         {
             $this->login=$login;
