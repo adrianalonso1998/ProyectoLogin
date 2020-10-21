@@ -40,10 +40,12 @@
         }
         
 
-        public function __construct($login,$password)
+        public function __construct($login,$password,$nombre,$apellidos)
         {
             $this->login=$login;
             $this->password=$password;
+            $this->nombre=$nombre;
+            $this->apellidos=$apellidos;
         }
         function __toString(){
             $login=$this->getLogin();
